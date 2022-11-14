@@ -1,0 +1,275 @@
+[11/14, 22:22] Samir Khan: hover
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("p").hover(function(){
+    $(this).css("background-color", "yellow");
+    }, function(){
+    $(this).css("background-color", "pink");
+  });
+});
+</script>
+</head>
+<body>
+
+<p>Hover the mouse pointer over this paragraph.</p>
+
+</body>
+</html>
+
+click
+<!DOCTYPE html>  
+<html>  
+<head>  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>  
+<script>  
+$(document).ready(function(){  
+    $("p").click(function(){  
+        alert("This paragraph was clicked.");  
+    });  
+});  
+</script>  
+</head>  
+<body>  
+<p>Click on the statement.</p>  
+</body>  
+</html>  
+
+on
+
+
+
+
+question 9A) Write a jQuery to Select elements by class name,id and element name. (B)Write a jQuery to show the use of Click (), hover (), on ().. off () events.
+[11/14, 22:23] Samir Khan: hover click on
+[11/14, 22:23] Samir Khan: <!DOCTYPEhtml>
+<html>
+<head>
+<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+	$("button").click(function(){
+		$("#hh3").css("color","red")
+		.slideUp(200)
+		.slideDown(2000);
+	});
+});
+</script>
+</head>
+<body>
+<h3 id = hh3> change me</h3>
+<button>click me</button>
+</body>
+</html>
+[11/14, 22:24] Samir Khan: channning method
+[11/14, 22:24] Samir Khan: <!DOCTYPE html>
+<html>
+  
+<head>
+    <script src="
+https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+</head>
+  
+<body>
+    <p id="para">Chaining method in jQuery</p>
+  
+    <button>Click me</button>
+  
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("button").click(function() {
+                  
+                 //assigning the color blue
+                $("#para").css("color", "blue")
+                //using slide up method
+                    .slideUp(2000)  
+                 //using slide down method
+                    .slideDown(2000).
+                slideUp(2000).
+                slideDown(4000);
+            });
+        });
+    </script>
+</body>
+  
+</html>
+[11/14, 22:25] Samir Khan: channing wala 2
+[11/14, 22:25] Samir Khan: <!DOCTYPE html>  
+<html>  
+<head>  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>  
+<script>   
+$(document).ready(function(){  
+    $("#flip").click(function(){  
+        $("#panel").slideToggle(3000)
+    });  
+});  
+</script>  
+ <style>   
+#panel, #flip {  
+    padding: 5px;  
+    text-align: center;  
+    background-color: #00FFFF;  
+    border: solid 1px #c3c3c3;  
+}  
+#panel {  
+    padding: 50px;  
+    display:none;  
+}  
+</style>  
+</head>  
+<body>  
+<div id="flip">Click to slide toggle panel</div>  
+<div id="panel">Hello javatpoint.com!   
+It is the best tutorial website to learn jQuery and other languages.</div>  
+</body>  
+</html>
+[11/14, 22:25] Samir Khan: duration wala
+[11/14, 22:26] Samir Khan: <!DOCTYPEhtml>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+	$("#p1").mouseenter(function(){
+		alert("your paragraph has entered");
+	});
+});
+</script>
+</head>
+<body>
+<p id="p1">Enter your paragraph</p>
+</body>
+</html>
+[11/14, 22:26] Samir Khan: event for alert fucntion
+[11/14, 22:27] Samir Khan: <!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#btn1").click(function(){
+    $("#test1").text("Hello world!");
+  });
+  $("#btn2").click(function(){
+    $("#test2").html("<b>Hello world!</b>");
+  });
+  $("#btn3").click(function(){
+    $("#test3").val("mouse");
+  });
+});
+</script>
+</head>
+<body>
+
+<p id="test1">This is a paragraph.</p>
+<p id="test2">This is another paragraph.</p>
+
+<p>Input field: <input type="text" id="test3" value="Mickey Mouse"></p>
+
+<button id="btn1">Set Text</button>
+<button id="btn2">Set HTML</button>
+<button id="btn3">Set Value</button>
+
+</body>
+</html>
+[11/14, 22:27] Samir Khan: get set
+[11/14, 22:27] Samir Khan: <!DOCTYPEhtml>
+<html>
+<head>
+<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+	$("button").mousedown(function(){
+		$("p.hello").toggle();
+});
+	$("button").mouseup(function(){
+	$("p.world").toggle();
+	});
+})
+</script>
+</head>
+<body>
+<button> Toggle </button>
+<p class = hello> down toggle</p>
+<p class = world> up toggle</p>
+</body>
+</html>
+[11/14, 22:27] Samir Khan: jquery event
+[11/14, 22:28] Samir Khan: <!DOCTYPE html>
+<html>
+<head>
+<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+	$("button").click(function(){
+		$("p").hide();
+});
+});
+</script>
+</head>
+<body>
+<h1>This is a heading </h1>
+<p>this is paragraph1</p>
+<p>this is paragraph2</p>
+<button>click me to hide para</button>
+</body>
+</html>
+[11/14, 22:29] Samir Khan: practical 8
+[11/14, 22:29] Samir Khan: <!DOCTYPEhtml>
+<html>
+<head>
+<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+	$("#btn1").click(function(){
+		alert("text:" + $("#myh2").text());
+	});
+	$("#btn2").click(function(){
+		alert("HTML:" + $("#myh2").html());
+	});
+});
+</script>
+</head>
+<body>
+<h2 id="myh2">This is head <i>bold tag</i> <u>underline tag</u> </h2>
+<button id="btn1">show text</button>
+<button id="btn2">show html</button>
+</body>
+[11/14, 22:30] Samir Khan: set method
+[11/14, 22:31] Samir Khan: <!DOCTYPE html>
+<html>
+    <head>
+        //<meta charset="utf-8">
+        <title>jQuery example: slideUp(), slideDown(), and slideToggle()</title>
+    </head>
+    <body>
+    <button id='slide-down'>Slide Down</button>       
+    <button id='slide-up'>Slide Up</button>        
+    <button id='toggle-sliding'>Toggle Sliding</button>
+    <img src='https://www.kasandbox.org/programming-images/creatures/Hopper-Happy.png' alt='hopper'>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>
+        
+        // Monitors the buttons for click events and slides <img> in response
+        
+        $('#slide-down').click(function(){
+            $('img').slideDown('fast');
+        });
+        
+        $('#slide-up').click(function(){
+            $('img').slideUp(400);
+        });
+        
+        $('#toggle-sliding').click(function(){
+            $('img').slideToggle('slow');
+        });
+    </script>
+    </body>
+</html>
+[11/14, 22:32] Samir Khan: up down and toggle
